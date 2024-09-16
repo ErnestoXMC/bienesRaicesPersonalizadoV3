@@ -1,0 +1,15 @@
+.contenido-nosotros{
+    h1{
+        margin: 5rem 0
+    }
+}
+.contenedor-nosotros{
+    @include desktop{
+        @include grid(2, 2rem);
+    }
+    blockquote{
+        font-weight: $black;
+        font-size: 2.2rem;
+        margin: 1rem 0 3rem 0;
+    }
+}

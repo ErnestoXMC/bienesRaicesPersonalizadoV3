@@ -1,0 +1,41 @@
+.formulario{
+    legend{
+        font-size: 2rem;
+        color: $grisOscuro;
+    }
+    p{
+        margin: 2rem 0 0 0;
+        font-size: 1.4rem;
+        color: $grisOscuro;
+    }
+    label{
+        display: block;
+        text-transform: uppercase;
+        font-weight: $black;
+    }
+    input:not([type="submit"]), textarea, select{
+        padding: 1rem;
+        border: 1px solid darken($gris, 10);
+        background-color: $blanco;
+        border-radius: .5rem;
+        margin-bottom: 2rem;
+        display: block;
+        width: 100%;
+    }
+    textarea{
+        height: 20rem;
+    }
+    .forma-contacto{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 30rem;
+    }
+    input[type="radio"]{
+        margin: 0;
+        width: auto;
+    }
+    input[type="radio"], input[type="date"], input[type="time"], select{
+        cursor: pointer;
+    }
+}

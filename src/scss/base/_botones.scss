@@ -1,0 +1,36 @@
+.btn-marron-block{
+    @include btn($negro, block, uppercase, $marron)
+}
+.btn-verde{
+    margin-top: 2rem;
+    @include btn($verde, inline-block, none ,#869d7a);
+}
+.btn-verde-deshabilitado{
+    margin-top: 2rem;
+    @include btn(gray, inline-block, none ,gray, default);
+}
+.btn-verde-claro{
+    margin-top: 2rem;
+    @include btn(#76866d, inline-block, none);
+}
+.btn-marron{
+    @include btn($marron, inline-block)
+}
+.btn-icono{
+    padding: 1rem;
+    margin: 0 .5rem;
+    border-radius: .5rem;
+    border: none;
+    height: 5rem;
+    &.actualizar{
+        background-color: #457b9d;
+    }
+    &.info{
+        background-color: #2a9d8f;
+    }
+    &.eliminar{
+        background-color: #ef233c;
+        cursor: pointer;
+    }
+
+}

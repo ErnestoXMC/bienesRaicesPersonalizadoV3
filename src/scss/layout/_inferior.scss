@@ -1,0 +1,44 @@
+@include tablet{
+    .seccion-inferior{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 3rem;
+    }
+}
+@include desktop{
+    .entrada-blog{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid gainsboro ;
+        &:last-of-type{
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+    }
+}
+.blog, .testimoniales{
+    h3{
+        font-weight: $regular;
+    }
+}
+.texto-entrada{
+    h4{
+        color: $negro;
+        margin-top: 2rem;
+        @include tablet{
+            margin: 0;
+        }
+        &::after{
+            content: '';
+            display: block;//Hace que se muestre el elemento
+            width: 40%;
+            height: .5rem;
+            background-color: $verde;
+        }
+    }
+    span{
+        color: $marron;
+    }
+}

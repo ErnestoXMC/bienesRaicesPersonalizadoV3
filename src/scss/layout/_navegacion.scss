@@ -1,0 +1,76 @@
+.barra{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    align-items: center;
+    @include desktop {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    img{
+        margin-bottom: 2rem;
+        @include desktop {
+            margin-bottom: 0;
+        }
+    }
+}
+.navegacion {
+    visibility: hidden;
+    opacity: 0;
+    height: 3rem;
+    transition: visibility .3s ease-in-out, opacity .5s linear, height .5s ease-in-out;
+    @include desktop{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    a{
+        display: block;
+        text-align: center;
+        color: $blanco;
+        font-size: 2.2rem;
+        @include desktop{
+            font-size: 2rem;
+        }
+        &:hover{
+            color: $verdeClaro;
+        }
+    }
+}
+.nav-aparecer{
+    visibility: visible;
+    opacity: 1;
+    height: 19rem;
+}
+.mobile-menu{
+    @include desktop{
+        display: none;
+    }
+    img{
+        width: 3rem;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+.nav-footer{
+    visibility: visible;
+    opacity: 1;
+    height: 18rem;
+    @include desktop{
+        height: 3rem;
+    }
+}
+.dark{
+    margin: 1rem 0 0 4.5rem;
+    @include desktop{
+        margin: 0;
+    }
+    img{
+        width: 3rem;
+        filter: invert(100%);
+    }
+}

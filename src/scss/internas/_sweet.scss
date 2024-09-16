@@ -1,0 +1,36 @@
+/* Sobrescribe los estilos de SweetAlert2 para hacer la alerta más grande */
+.swal2-container {
+    font-size: 2rem; /* Aumenta el tamaño de fuente de la alerta */
+}
+
+.swal2-popup {
+    width: auto !important; /* Asegura que el ancho sea adecuado */
+    padding: 3rem !important; /* Aumenta el padding */
+    font-size: 2rem; /* Aumenta el tamaño de fuente base */
+    box-sizing: border-box; /* Asegura el box-sizing adecuado */
+    max-width: 80vw; /* Ajusta el ancho máximo */
+}
+
+.swal2-title {
+    font-size: 2.4rem !important; /* Aumenta el tamaño del título */
+}
+
+.swal2-html-container, .swal2-content {
+    font-size: 2rem !important; /* Aumenta el tamaño del contenido */
+}
+
+.swal2-icon {
+    font-size: 3rem !important; /* Aumenta el tamaño del icono */
+    width: 15rem !important;
+    height: 15rem !important;
+    margin: 3rem auto !important;
+}
+
+.swal2-actions {
+    font-size: 2rem; /* Aumenta el tamaño de los botones */
+}
+
+.swal2-confirm, .swal2-cancel {
+    font-size: 2rem; /* Asegura que los botones tengan el tamaño correcto */
+    padding: 1.5rem 3rem; /* Aumenta el padding de los botones */
+}
